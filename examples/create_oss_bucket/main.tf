@@ -1,7 +1,3 @@
-provider "alicloud" {
-  region = "cn-beijing"
-}
-
 // create new bucket 
 module "oss-bucket" {
   source      = "../../"
@@ -14,7 +10,7 @@ module "oss-bucket" {
   }]
 
   logging = [{
-    target_bucket = "your_existed_and_same_region_bucket"
+    target_bucket = "your-existed-and-same-region-bucket"
     target_prefix = "log/"
   }]
 
