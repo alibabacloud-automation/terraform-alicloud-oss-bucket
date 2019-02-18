@@ -1,23 +1,25 @@
 # used for testing
-*.tfvars    
+*.tfvars
 
-# Compiled files    
-*.tfstate   
-*.tfstate.backup    
+# Compiled files
+*.tfstate
+*.tfstate.backup
 
-# Module directory  
-.terraform/ 
+# Module directory
+.terraform/
 
-# terraform log 
-*.log   
+# terraform log
+*.log
 
-# auto-generated key pair file  
-*.pem   
+# auto-generated key pair file
+*.pem
 
-# tools files   
-.DS_Store   
-.idea   
+# tools files
+.DS_Store
+.idea
 
-# others    
-*.bak   
+# others
+*.bak
 *.bk
+
+

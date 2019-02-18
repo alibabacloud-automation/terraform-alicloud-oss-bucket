@@ -1,5 +1,5 @@
 Alicloud OSS Terraform Module On Alibaba Cloud 
-terraform-alicloud-oss
+terraform-alicloud-oss-bucket
 =====================================================================
 
 Terraform module which creates OSS bucket.
@@ -18,7 +18,7 @@ You can use this in your terraform template with the following steps.
 
     ```
     module "oss-bucket" {
-        source     = "../../"
+        source     = "terraform-alicloud-modules/oss-bucket/alicloud"
         bucket_name = "just_a_test"
         acl = "private"
     }
