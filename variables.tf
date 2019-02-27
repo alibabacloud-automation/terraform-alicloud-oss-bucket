@@ -9,25 +9,25 @@ variable "acl" {
 
 variable "website" {
   type    = "list"
-  default = null
+  default = [] 
 }
 
 variable "logging" {
   type    = "list"
-  default = null
+  default = []
 }
 
 variable "logging_isenable" {
   type    = "string"
-  default = null
+  default = ""
 }
 
 variable "referer_config" {
   type    = "list"
-  default = null
+  default = []
 }
 
 variable "lifecycle_rule" {
   type    = "list"
-  default = null
+  default = []
 }
