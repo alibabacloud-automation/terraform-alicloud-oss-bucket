@@ -6,4 +6,5 @@ resource "alicloud_oss_bucket" "create_new_bucket" {
   logging_isenable = "${var.logging_isenable}"
   referer_config   = "${var.referer_config}"
   lifecycle_rule   = "${var.lifecycle_rule}"
+  policy           = "${var.policy}"
 }

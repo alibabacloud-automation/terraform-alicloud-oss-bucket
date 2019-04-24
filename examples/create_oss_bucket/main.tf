@@ -39,5 +39,14 @@ module "oss-bucket" {
         date = "2018-01-12"
       }]
     },
-  ]
+  ],
+  policy = <<POLICY
+  {"Statement":
+      [{"Action":
+          ["oss:PutObject", "oss:GetObject", "oss:DeleteBucket"],
+        "Effect":"Allow",
+        "Resource":
+            ["acs:oss:*:*:*"]}],
+   "Version":"1"}
+  POLICY
 }
