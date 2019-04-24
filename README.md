@@ -43,6 +43,7 @@ You can use this in your terraform template with the following steps.
 | logging_isenable | The flag of using logging enable container. Defaults true  | string | "true" | no |
 | referer_config | The configuration of referer  | list | [] | no |
 | lifecycle_rule | A configuration of object lifecycle management | list | [] | no |
+| policy | JSON formatted bucket policy text to attach to the bucket | string | "" | no |
 
 
 ## Outputs

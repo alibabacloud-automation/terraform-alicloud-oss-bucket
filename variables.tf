@@ -31,3 +31,8 @@ variable "lifecycle_rule" {
   type    = "list"
   default = []
 }
+
+variable "policy" {
+  type    = "string"
+  default = ""
+}
