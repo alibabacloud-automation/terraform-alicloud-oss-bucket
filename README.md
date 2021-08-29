@@ -41,7 +41,7 @@ If you still want to use the `provider` setting to apply this module, you can sp
    bucket_name = "my-foo-bucket"
    acl         = "private"
 
-   version     = "v1.4.0"
+   version     = "1.4.0"
    region      = "cn-hangzhou"
 }
 ```
