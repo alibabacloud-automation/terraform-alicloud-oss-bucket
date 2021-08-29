@@ -46,7 +46,7 @@ If you still want to use the `provider` setting to apply this module, you can sp
 }
 ```
 
-If you want to upgrade the module to 1.5.0 and higher in-place, you can define a provider which same region with 
+If you want to upgrade the module to 1.5.0 or higher in-place, you can define a provider which same region with 
 previous region:
 
 ```hcl
