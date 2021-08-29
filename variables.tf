@@ -1,5 +1,5 @@
 variable "region" {
-  description = "The region used to launch this module resources."
+  description = "(Deprecated from version 1.5.0) The region used to launch this module resources."
   default     = ""
 }
 
@@ -13,7 +13,7 @@ variable "acl" {
 }
 
 variable "website" {
-  type    = list(object({
+  type = list(object({
     index_document = string
     error_document = string
   }))
@@ -21,7 +21,7 @@ variable "website" {
 }
 
 variable "logging" {
-  type    = list(object({
+  type = list(object({
     target_bucket = string
     target_prefix = string
   }))
@@ -34,7 +34,7 @@ variable "logging_isenable" {
 }
 
 variable "referer_config" {
-  type    = list(object({
+  type = list(object({
     allow_empty = bool
     referers    = list(string)
   }))
@@ -42,10 +42,10 @@ variable "referer_config" {
 }
 
 variable "lifecycle_rule" {
-  type    = list(object({
-    id      = string
-    prefix  = string
-    enabled = bool
+  type = list(object({
+    id         = string
+    prefix     = string
+    enabled    = bool
     expiration = list(map(string))
   }))
   default = []

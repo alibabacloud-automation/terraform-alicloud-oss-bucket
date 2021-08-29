@@ -1,8 +1,9 @@
 ## 1.6.0 (Unreleased)
-## 1.5.0 (August 29, 2019)
+## 1.5.0 (August 29, 2021)
 
 IMPROVEMENTS:
-- Removes the provider setting and improves the readme [GH-7](https://github.com/terraform-alicloud-modules/terraform-alicloud-oss-bucket/pull/7)
+- add note to deprecate the region [GH-9](https://github.com/terraform-alicloud-modules/terraform-alicloud-oss-bucket/pull/9)
+- Removes the provider setting and improves the readme [GH-8](https://github.com/terraform-alicloud-modules/terraform-alicloud-oss-bucket/pull/8)
 
 ## 1.4.0 (September 24, 2019)
 
