@@ -15,7 +15,7 @@ resource "alicloud_oss_bucket" "create_new_bucket" {
       target_prefix = lookup(logging.value, "target_prefix", null)
     }
   }
-  logging_isenable = var.logging_isenable
+
   dynamic "referer_config" {
     for_each = var.referer_config
     content {
@@ -41,4 +41,3 @@ resource "alicloud_oss_bucket" "create_new_bucket" {
   }
   policy = var.policy
 }
-

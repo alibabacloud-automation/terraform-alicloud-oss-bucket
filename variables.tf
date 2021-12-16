@@ -1,10 +1,18 @@
 variable "region" {
   description = "(Deprecated from version 1.5.0) The region used to launch this module resources."
+  type        = string
   default     = ""
 }
 
+variable "logging_isenable" {
+  description = "(Deprecated from version 1.6.0) The flag of using logging enable container."
+  type        = bool
+  default     = true
+}
+
 variable "bucket_name" {
-  type = string
+  type    = string
+  default = ""
 }
 
 variable "acl" {
@@ -26,11 +34,6 @@ variable "logging" {
     target_prefix = string
   }))
   default = []
-}
-
-variable "logging_isenable" {
-  type    = bool
-  default = false
 }
 
 variable "referer_config" {
