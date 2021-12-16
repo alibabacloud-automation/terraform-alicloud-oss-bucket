@@ -119,7 +119,7 @@ More details see [How to use provider in the module](https://www.terraform.io/do
 
 Authors
 -------
-Created and maintained by He Guimin(@xiaozhu36 or @coderall, heguimin36@163.com or lzcgwushuang@163.com)
+Created and maintained by Alibaba Cloud Terraform Team(terraform@alibabacloud.com)
 
 Reference
 ---------
