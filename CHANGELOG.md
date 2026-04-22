@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/alibabacloud-automation/terraform-alicloud-oss-bucket/compare/v1.5.0...v2.0.0) (2026-04-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* add provider version constraint for aliyun/alicloud
+
+### Features
+
+* add provider version constraint for aliyun/alicloud ([7d56c14](https://github.com/alibabacloud-automation/terraform-alicloud-oss-bucket/commit/7d56c14cbe5cb41d36531fb8c94a96482de2a31b))
+
 ## 1.6.0 (Unreleased)
 ## 1.5.0 (August 29, 2021)
 
