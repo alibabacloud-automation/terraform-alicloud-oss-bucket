@@ -1,26 +1,18 @@
-variable "region" {
-  description = "(Deprecated from version 1.5.0) The region used to launch this module resources."
-  type        = string
-  default     = ""
-}
-
-variable "logging_isenable" {
-  description = "(Deprecated from version 1.6.0) The flag of using logging enable container."
-  type        = bool
-  default     = true
-}
 
 variable "bucket_name" {
+  description = "The name of the bucket"
   type    = string
   default = ""
 }
 
 variable "acl" {
+  description = "The access control list of the bucket"
   type    = string
   default = "private"
 }
 
 variable "website" {
+  description = "The website configuration of the bucket"
   type = list(object({
     index_document = string
     error_document = string
@@ -29,6 +21,7 @@ variable "website" {
 }
 
 variable "logging" {
+  description = "The logging configuration of the bucket"
   type = list(object({
     target_bucket = string
     target_prefix = string
@@ -37,6 +30,7 @@ variable "logging" {
 }
 
 variable "referer_config" {
+  description = "The referer configuration of the bucket"
   type = list(object({
     allow_empty = bool
     referers    = list(string)
@@ -45,6 +39,7 @@ variable "referer_config" {
 }
 
 variable "lifecycle_rule" {
+  description = "The lifecycle rule of the bucket"
   type = list(object({
     id         = string
     prefix     = string
@@ -55,6 +50,7 @@ variable "lifecycle_rule" {
 }
 
 variable "policy" {
+  description = "The policy of the bucket"
   type    = string
   default = ""
 }

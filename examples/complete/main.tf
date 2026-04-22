@@ -1,4 +1,4 @@
-// create new bucket 
+# create new bucket 
 module "oss-bucket" {
   source      = "../../"
   bucket_name = var.bucket_name
