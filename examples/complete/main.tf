@@ -27,6 +27,6 @@ module "oss-bucket" {
 
   lifecycle_rule = var.lifecycle_rule
 
-  policy = var.policy
+  # policy = var.policy
 
 }
