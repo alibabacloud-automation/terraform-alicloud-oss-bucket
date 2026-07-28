@@ -1,17 +1,17 @@
 variable "bucket_name" {
   description = "The name of the bucket"
-  type    = string
-  default = "bucket-terraform-20211216"
+  type        = string
+  default     = "bucket-terraform-20211216"
 }
 
 variable "acl" {
   description = "The access control list of the bucket"
-  type    = string
-  default = "private"
+  type        = string
+  default     = "private"
 }
 
 variable "website" {
-  description = "The website configuration of the bucket" 
+  description = "The website configuration of the bucket"
   type = list(object({
     index_document = string
     error_document = string
@@ -62,8 +62,8 @@ variable "lifecycle_rule" {
 
 variable "policy" {
   description = "The policy of the bucket"
-  type    = string
-  default = <<POLICY
+  type        = string
+  default     = <<POLICY
   {"Statement":
       [{"Action":
           ["oss:PutObject", "oss:GetObject", "oss:DeleteBucket"],

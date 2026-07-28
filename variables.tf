@@ -1,14 +1,14 @@
 
 variable "bucket_name" {
   description = "The name of the bucket"
-  type    = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
 variable "acl" {
   description = "The access control list of the bucket"
-  type    = string
-  default = "private"
+  type        = string
+  default     = "private"
 }
 
 variable "website" {
@@ -51,7 +51,7 @@ variable "lifecycle_rule" {
 
 variable "policy" {
   description = "The policy of the bucket"
-  type    = string
-  default = ""
+  type        = string
+  default     = ""
 }
 
