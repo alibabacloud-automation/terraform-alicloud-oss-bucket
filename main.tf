@@ -1,6 +1,5 @@
 resource "alicloud_oss_bucket" "create_new_bucket" {
   bucket = var.bucket_name
-  acl    = var.acl
   dynamic "website" {
     for_each = var.website
     content {
